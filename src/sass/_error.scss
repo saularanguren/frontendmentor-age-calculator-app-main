@@ -1,0 +1,17 @@
+@use 'variables';
+@use 'fonts';
+
+.error-input {
+    border:1px solid variables.$red  !important;
+}
+
+.error-text {
+    color: variables.$red !important;
+}
+
+span {
+    color: variables.$red;
+    font-size: 10px;
+    font-family: 'Poppins-Italic';
+    text-align: left;
+}

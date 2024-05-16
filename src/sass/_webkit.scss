@@ -1,0 +1,8 @@
+/* Styles for Chrome and Safari */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px hsl(0, 0%, 100%) inset !important;
+  -webkit-text-fill-color: hsl(0, 0%, 8%) !important;
+}
