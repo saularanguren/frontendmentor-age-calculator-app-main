@@ -3,26 +3,26 @@
 @use 'variables';
 
 .card {
-    padding: 48px 24px;
-    border-radius: 24px 24px 100px 24px;
+    padding: 3rem 1.5rem;
+    border-radius: 1.5rem 1.5rem 6.25rem 1.5rem;
     background: variables.$white;
 
-    @include mixins.width-height(343px, 486px);
-    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, column, 32px);
+    @include mixins.width-height(21.438rem, 30.375rem);
+    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, column, 2rem);
 }
 
 .card_date-inputs {
-    @include mixins.width-height(295px, 76px);
-    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, row, 16px);
+    @include mixins.width-height(18.438rem, 4.75rem);
+    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, row, 1rem);
 }
 
 .card_date-inputs > div {
-    @include mixins.width-height(87.67px, 76px);
-    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, column, 4px);
+    @include mixins.width-height(5.479rem, 4.75rem);
+    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, column, 0.25rem);
 }
 
 .card_date-inputs .info {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: 'Poppins-Bold';
     text-align: left;
     text-transform: uppercase;
@@ -31,32 +31,32 @@
 }
 
 .--day .info {
-    @include mixins.width-height(32px, 18px);
+    @include mixins.width-height(2rem, 1.125rem);
 }
 
 .--month .info {
-    @include mixins.width-height(58px, 18px);
+    @include mixins.width-height(3.625rem, 1.125rem);
 }
 
 .--year .info {
-    @include mixins.width-height(41px, 18px);
+    @include mixins.width-height(2.563rem, 1.125rem);
 }
 
 .card_date-inputs .input {
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: solid 1px variables.$line;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    border: solid 0.063rem variables.$line;
     outline: none;
     cursor: pointer;
     transition: .5s ease-in-out;
     
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Poppins-Bold';
     letter-spacing: .01em;
     color: variables.$black;
     
-    @include mixins.width-height(87.67px, 54px);
-    @include mixins.flex-align-justify-direction-gap(center, flex-start, row, 16px);
+    @include mixins.width-height(5.479rem, 3.375rem);
+    @include mixins.flex-align-justify-direction-gap(center, flex-start, row, 1rem);
 }
 
 .card_date-inputs .input:hover {
@@ -69,7 +69,7 @@
 }
 
 .card_img {
-    @include mixins.width-height(295px, 64px);
+    @include mixins.width-height(18.438rem, 4rem);
     @include mixins.flex-align-justify-direction-gap(center, flex-start, row, 0);
 }
 
@@ -77,18 +77,18 @@
     border: none;
     background: variables.$line;
 
-    @include mixins.width-height(115.5px, 1px);
-    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, row, 10px);
+    @include mixins.width-height(7.219rem, 0.063rem);
+    @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, row, 0.625rem);
 }
 
 .card_img figure {
     position: relative;
-    border-radius: 216px;
+    border-radius: 13.5rem;
     background: variables.$purple;
     transition: .5s ease-in-out;
     
-    @include mixins.width-height(64px, 64px);
-    @include mixins.flex-align-justify-direction-gap(center, center, row, 8px);
+    @include mixins.width-height(4rem, 4rem);
+    @include mixins.flex-align-justify-direction-gap(center, center, row, 0.5rem);
 }
 
 .card_img figure:hover {
@@ -96,32 +96,32 @@
 }
 
 .card_img figure img {
-    @include mixins.width-height(24px, 24px);
+    @include mixins.width-height(1.5rem, 1.5rem);
     @include mixins.flex-align-justify-direction-gap(flex-start, flex-end, row, 0);
 }
 
 button {
     position: absolute;
     border: none;
-    border-radius: 216px;
+    border-radius: 13.5rem;
     background: transparent;
     cursor: pointer;
 
-    @include mixins.width-height(64px, 64px);
+    @include mixins.width-height(4rem, 4rem);
 }
 
 .card_date-outputs {
-    @include mixins.width-height(295px, 186px);
+    @include mixins.width-height(18.438rem, 11.625rem);
     @include mixins.flex-align-justify-direction-gap(flex-start, flex-start, column, 0);
 }
 
 .card_date-outputs > div {
-    @include mixins.width-height(295px, 186px);
-    @include mixins.flex-align-justify-direction-gap(center, flex-start, row, 8px);
+    @include mixins.width-height(18.438rem, 11.625rem);
+    @include mixins.flex-align-justify-direction-gap(center, flex-start, row, 0.5rem);
 }
 
 .card_date-outputs .result-info, .info-output{
-    font-size: 56px;
+    font-size: 3.5rem;
     font-family: 'Poppins-ExtraBoldItalic';
     text-align: left;
     line-height: 1.1em;
@@ -134,13 +134,13 @@ button {
 }
 
 .--years {
-    @include mixins.width-height(162px, 62px);
+    @include mixins.width-height(10.125rem, 3.875rem);
 }
 
 .--months {
-    @include mixins.width-height(222px, 62px);
+    @include mixins.width-height(13.875rem, 3.875rem);
 }
 
 .--days {
-    @include mixins.width-height(142px, 62px);
+    @include mixins.width-height(8.875rem, 3.875rem);
 }

@@ -1,3 +1,12 @@
+/* Styles for Chrome and Safari */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1.875rem hsl(0, 0%, 100%) inset !important;
+  -webkit-text-fill-color: hsl(0, 0%, 8%) !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,40 +36,40 @@ body {
   src: url(../assets/fonts/Poppins-Italic.ttf);
 }
 .card {
-  padding: 48px 24px;
-  border-radius: 24px 24px 100px 24px;
+  padding: 3rem 1.5rem;
+  border-radius: 1.5rem 1.5rem 6.25rem 1.5rem;
   background: hsl(0, 0%, 100%);
-  width: 343px;
-  height: 486px;
+  width: 21.438rem;
+  height: 30.375rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .card_date-inputs {
-  width: 295px;
-  height: 76px;
+  width: 18.438rem;
+  height: 4.75rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .card_date-inputs > div {
-  width: 87.67px;
-  height: 76px;
+  width: 5.479rem;
+  height: 4.75rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 .card_date-inputs .info {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: "Poppins-Bold";
   text-align: left;
   text-transform: uppercase;
@@ -69,38 +78,38 @@ body {
 }
 
 .--day .info {
-  width: 32px;
-  height: 18px;
+  width: 2rem;
+  height: 1.125rem;
 }
 
 .--month .info {
-  width: 58px;
-  height: 18px;
+  width: 3.625rem;
+  height: 1.125rem;
 }
 
 .--year .info {
-  width: 41px;
-  height: 18px;
+  width: 2.563rem;
+  height: 1.125rem;
 }
 
 .card_date-inputs .input {
-  padding: 12px 16px;
-  border-radius: 8px;
-  border: solid 1px hsl(0, 0%, 86%);
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  border: solid 0.063rem hsl(0, 0%, 86%);
   outline: none;
   cursor: pointer;
   transition: 0.5s ease-in-out;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Poppins-Bold";
   letter-spacing: 0.01em;
   color: hsl(0, 0%, 8%);
-  width: 87.67px;
-  height: 54px;
+  width: 5.479rem;
+  height: 3.375rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .card_date-inputs .input:hover {
@@ -113,8 +122,8 @@ body {
 }
 
 .card_img {
-  width: 295px;
-  height: 64px;
+  width: 18.438rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -125,27 +134,27 @@ body {
 .line {
   border: none;
   background: hsl(0, 0%, 86%);
-  width: 115.5px;
-  height: 1px;
+  width: 7.219rem;
+  height: 0.063rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .card_img figure {
   position: relative;
-  border-radius: 216px;
+  border-radius: 13.5rem;
   background: hsl(259, 100%, 65%);
   transition: 0.5s ease-in-out;
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .card_img figure:hover {
@@ -153,8 +162,8 @@ body {
 }
 
 .card_img figure img {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -165,16 +174,16 @@ body {
 button {
   position: absolute;
   border: none;
-  border-radius: 216px;
+  border-radius: 13.5rem;
   background: transparent;
   cursor: pointer;
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .card_date-outputs {
-  width: 295px;
-  height: 186px;
+  width: 18.438rem;
+  height: 11.625rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -183,17 +192,17 @@ button {
 }
 
 .card_date-outputs > div {
-  width: 295px;
-  height: 186px;
+  width: 18.438rem;
+  height: 11.625rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .card_date-outputs .result-info, .info-output {
-  font-size: 56px;
+  font-size: 3.5rem;
   font-family: "Poppins-ExtraBoldItalic";
   text-align: left;
   line-height: 1.1em;
@@ -206,22 +215,22 @@ button {
 }
 
 .--years {
-  width: 162px;
-  height: 62px;
+  width: 10.125rem;
+  height: 3.875rem;
 }
 
 .--months {
-  width: 222px;
-  height: 62px;
+  width: 13.875rem;
+  height: 3.875rem;
 }
 
 .--days {
-  width: 142px;
-  height: 62px;
+  width: 8.875rem;
+  height: 3.875rem;
 }
 
 .error-input {
-  border: 1px solid hsl(0, 100%, 67%) !important;
+  border: 0.063rem solid hsl(0, 100%, 67%) !important;
 }
 
 .error-text {
@@ -230,18 +239,93 @@ button {
 
 span {
   color: hsl(0, 100%, 67%);
-  font-size: 10px;
+  font-size: 0.625rem;
   font-family: "Poppins-Italic";
   text-align: left;
 }
 
-/* Styles for Chrome and Safari */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px hsl(0, 0%, 100%) inset !important;
-  -webkit-text-fill-color: hsl(0, 0%, 8%) !important;
+@media (min-width: 64rem) and (min-height: 43.75rem) {
+  span {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 64rem) and (min-height: 43.75rem) {
+  .card {
+    gap: 0;
+    padding: 3.5rem;
+    border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
+    width: 52.5rem;
+    height: 40.688rem;
+  }
+  .card_date-inputs {
+    gap: 2rem;
+    width: 45.5rem;
+    height: 6.313rem;
+  }
+  .card_date-inputs > div {
+    gap: 0.5rem;
+    width: 10rem;
+    height: 6.313rem;
+  }
+  .card_date-inputs .input {
+    padding: 0.75rem 1.5rem;
+    width: 10rem;
+    height: 4.5rem;
+  }
+  .card_date-inputs .info {
+    font-size: 0.875rem;
+  }
+  .--day .info {
+    width: 2.313rem;
+    height: 1.313rem;
+  }
+  .--month .info {
+    width: 4.188rem;
+    height: 1.313rem;
+  }
+  .--year .info {
+    width: 2.938rem;
+    height: 1.313rem;
+  }
+  .card_img {
+    width: 45.5rem;
+    height: 6rem;
+  }
+  .line:last-child {
+    display: none;
+  }
+  .line:first-child {
+    width: 39.5rem;
+  }
+  .card_img figure, button {
+    width: 6rem;
+    height: 6rem;
+  }
+  .card_img figure img {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .card_date-outputs {
+    width: 45.5rem;
+    height: 21.375rem;
+  }
+  .card_date-outputs > div {
+    width: 45.5rem;
+    height: 7.125rem;
+  }
+  .card_date-outputs .result-info, .info-output {
+    font-size: 6.5rem;
+    height: 7.125rem;
+  }
+  .--years {
+    width: 18.813rem;
+  }
+  .--months {
+    width: 25.813rem;
+  }
+  .--days {
+    width: 16.438rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

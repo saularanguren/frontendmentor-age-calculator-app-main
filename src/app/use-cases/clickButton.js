@@ -1,5 +1,5 @@
-import { dictionaryToMonths } from "./dictionaryDaysToMonths"
-import { textInputValidation } from "./errorHandling"
+import { dictionaryToMonths } from "../dictionaries/dictionaryDaysToMonths"
+import { textInputValidation } from "../error-handling/errorHandling"
 
 //* system data variables *
 const date = new Date(),
@@ -41,6 +41,7 @@ const entryVerification = () => {
         //* Exceptions to consider in return values, return value of the year *
         if(inputMonth.value > month) resultYears--
         if(inputMonth.value == (month + 1) && inputDay.value <= day) resultYears++
+        resultMonths--
 
         //* render data *
         const arrayContainers = [containerDays, containerMonths, containerYear],

@@ -1,4 +1,4 @@
-import { clearDataOld } from "./clearCompleted"
+import { clearDataOld } from "../use-cases/clearCompleted"
 
 export const functionPresentatioProyect = () => {
       const messageInputs = ['24', '09', '1984'],

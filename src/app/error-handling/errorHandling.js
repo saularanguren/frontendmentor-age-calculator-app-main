@@ -1,4 +1,4 @@
-import { errorPhraseDictionary } from "./errorDictionary"
+import { errorPhraseDictionary } from "../dictionaries/errorDictionary"
 import { activeModeError } from "./modeError"
 
 export const textInputValidation = () => {

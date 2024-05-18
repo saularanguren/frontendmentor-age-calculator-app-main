@@ -2,7 +2,7 @@
 @use 'fonts';
 
 .error-input {
-    border:1px solid variables.$red  !important;
+    border:0.063rem solid variables.$red  !important;
 }
 
 .error-text {
@@ -11,7 +11,13 @@
 
 span {
     color: variables.$red;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-family: 'Poppins-Italic';
     text-align: left;
+}
+
+@media (min-width: 64rem) and (min-height: 43.75rem) {
+    span {
+        font-size: 0.875rem;
+    }
 }

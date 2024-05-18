@@ -1,6 +1,4 @@
-import { desactiveModeError } from "./modeError"
-
-
+import { desactiveModeError } from "../error-handling/modeError"
 
 export const clearInputsText = () => {
     const message = document.querySelectorAll('span'),
@@ -36,5 +34,5 @@ export const clearInputsText = () => {
 
 export const clearDataOld = () => {
     document.querySelectorAll('input').forEach(input => input.value = '')
-    document.querySelectorAll('.info-output').forEach(paragraph => paragraph.textContent = '--')
+    document.querySelectorAll('.info-output').forEach(container => container.textContent = '--')
 }
