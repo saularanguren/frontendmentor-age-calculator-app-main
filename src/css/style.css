@@ -15,7 +15,7 @@ input:-webkit-autofill:active {
 
 body {
   min-height: 100dvh;
-  background: hsl(0, 0%, 86%);
+  background: hsl(0, 0%, 94%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,6 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
-
 .card_date-inputs {
   width: 18.438rem;
   height: 4.75rem;
@@ -57,7 +56,6 @@ body {
   flex-direction: row;
   gap: 1rem;
 }
-
 .card_date-inputs > div {
   width: 5.479rem;
   height: 4.75rem;
@@ -67,7 +65,6 @@ body {
   flex-direction: column;
   gap: 0.25rem;
 }
-
 .card_date-inputs .info {
   font-size: 0.75rem;
   font-family: "Poppins-Bold";
@@ -76,22 +73,6 @@ body {
   letter-spacing: 0.25em;
   color: hsl(0, 1%, 44%);
 }
-
-.--day .info {
-  width: 2rem;
-  height: 1.125rem;
-}
-
-.--month .info {
-  width: 3.625rem;
-  height: 1.125rem;
-}
-
-.--year .info {
-  width: 2.563rem;
-  height: 1.125rem;
-}
-
 .card_date-inputs .input {
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
@@ -111,16 +92,25 @@ body {
   flex-direction: row;
   gap: 1rem;
 }
-
 .card_date-inputs .input:hover {
   border-color: hsl(259, 100%, 65%);
 }
-
 .card_date-inputs .input::placeholder {
   color: hsl(0, 0%, 8%);
   opacity: 0.5;
 }
-
+.card .--day .info {
+  width: 2rem;
+  height: 1.125rem;
+}
+.card .--month .info {
+  width: 3.625rem;
+  height: 1.125rem;
+}
+.card .--year .info {
+  width: 2.563rem;
+  height: 1.125rem;
+}
 .card_img {
   width: 18.438rem;
   height: 4rem;
@@ -130,19 +120,6 @@ body {
   flex-direction: row;
   gap: 0;
 }
-
-.line {
-  border: none;
-  background: hsl(0, 0%, 86%);
-  width: 7.219rem;
-  height: 0.063rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0.625rem;
-}
-
 .card_img figure {
   position: relative;
   border-radius: 13.5rem;
@@ -156,11 +133,9 @@ body {
   flex-direction: row;
   gap: 0.5rem;
 }
-
 .card_img figure:hover {
   background: hsl(0, 0%, 8%);
 }
-
 .card_img figure img {
   width: 1.5rem;
   height: 1.5rem;
@@ -170,8 +145,18 @@ body {
   flex-direction: row;
   gap: 0;
 }
-
-button {
+.card .line {
+  border: none;
+  background: hsl(0, 0%, 86%);
+  width: 7.219rem;
+  height: 0.063rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0.625rem;
+}
+.card button {
   position: absolute;
   border: none;
   border-radius: 13.5rem;
@@ -180,7 +165,6 @@ button {
   width: 4rem;
   height: 4rem;
 }
-
 .card_date-outputs {
   width: 18.438rem;
   height: 11.625rem;
@@ -190,7 +174,6 @@ button {
   flex-direction: column;
   gap: 0;
 }
-
 .card_date-outputs > div {
   width: 18.438rem;
   height: 11.625rem;
@@ -200,8 +183,7 @@ button {
   flex-direction: row;
   gap: 0.5rem;
 }
-
-.card_date-outputs .result-info, .info-output {
+.card_date-outputs .result-info, .card_date-outputs .info-output {
   font-size: 3.5rem;
   font-family: "Poppins-ExtraBoldItalic";
   text-align: left;
@@ -209,22 +191,18 @@ button {
   letter-spacing: -0.02em;
   color: hsl(0, 0%, 8%);
 }
-
 .card_date-outputs .info-output {
   color: hsl(259, 100%, 65%);
 }
-
-.--years {
+.card .--years {
   width: 10.125rem;
   height: 3.875rem;
 }
-
-.--months {
+.card .--months {
   width: 13.875rem;
   height: 3.875rem;
 }
-
-.--days {
+.card .--days {
   width: 8.875rem;
   height: 3.875rem;
 }
@@ -275,15 +253,15 @@ span {
   .card_date-inputs .info {
     font-size: 0.875rem;
   }
-  .--day .info {
+  .card .--day .info {
     width: 2.313rem;
     height: 1.313rem;
   }
-  .--month .info {
+  .card .--month .info {
     width: 4.188rem;
     height: 1.313rem;
   }
-  .--year .info {
+  .card .--year .info {
     width: 2.938rem;
     height: 1.313rem;
   }
@@ -291,19 +269,23 @@ span {
     width: 45.5rem;
     height: 6rem;
   }
-  .line:last-child {
-    display: none;
-  }
-  .line:first-child {
-    width: 39.5rem;
-  }
-  .card_img figure, button {
+  .card_img figure {
     width: 6rem;
     height: 6rem;
   }
   .card_img figure img {
     width: 2.75rem;
     height: 2.75rem;
+  }
+  .card button {
+    width: 6rem;
+    height: 6rem;
+  }
+  .card .line:last-child {
+    display: none;
+  }
+  .card .line:first-child {
+    width: 39.5rem;
   }
   .card_date-outputs {
     width: 45.5rem;
@@ -313,17 +295,17 @@ span {
     width: 45.5rem;
     height: 7.125rem;
   }
-  .card_date-outputs .result-info, .info-output {
+  .card_date-outputs .result-info, .card_date-outputs .info-output {
     font-size: 6.5rem;
     height: 7.125rem;
   }
-  .--years {
+  .card .--years {
     width: 18.813rem;
   }
-  .--months {
+  .card .--months {
     width: 25.813rem;
   }
-  .--days {
+  .card .--days {
     width: 16.438rem;
   }
 }

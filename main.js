@@ -5,14 +5,16 @@ import { functionRenderElementsHtml } from './src/app/render-html/renderElements
 import { clearInputsText } from './src/app/use-cases/clearCompleted'
 import { clickInButton } from './src/app/use-cases/clickButton'
 import { autoFocusInputs } from './src/app/use-cases/autoFocusInputs'
-import { functionPresentatioProyect } from './src/app/render-html/presentation'
+import { updateInfoBasedOnCardWidth } from './src/app/use-cases/cardWidthManager'
 
 //* principal function *
 functionRenderElementsHtml('#app', cardElementHtml)
 document.querySelector('img').src = `${iconArrow}`
-document.addEventListener("DOMContentLoaded", functionPresentatioProyect);
 
 //* secondary functions *
 autoFocusInputs()
 clearInputsText()
 clickInButton()
+
+//* observer *
+setInterval(updateInfoBasedOnCardWidth, 100);

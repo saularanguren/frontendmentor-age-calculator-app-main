@@ -6,81 +6,85 @@
         padding: 3.5rem;
         border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
         @include mixins.width-height(52.5rem, 40.688rem);
-    }
+        
+        &_date-inputs {
+            gap: 2rem;
+            @include mixins.width-height(45.5rem, 6.313rem);
 
-    .card_date-inputs {
-        gap: 2rem;
-        @include mixins.width-height(45.5rem, 6.313rem);
-    }
+            & > div {
+                gap: 0.5rem;
+                @include mixins.width-height(10rem, 6.313rem);
+            }
+        
+            & .input {
+                padding: 0.75rem 1.5rem;
+                @include mixins.width-height(10rem, 4.5rem);
+            }
+        
+            & .info {
+                font-size: 0.875rem;
+            }
+        }
 
-    .card_date-inputs > div {
-        gap: 0.5rem;
-        @include mixins.width-height(10rem, 6.313rem);
-    }
+        .--day .info {
+            @include mixins.width-height(2.313rem, 1.313rem);
+        }
+        
+        .--month .info {
+            @include mixins.width-height(4.188rem, 1.313rem);
+        }
+        
+        .--year .info {
+            @include mixins.width-height(2.938rem, 1.313rem);
+        }    
+        
+        &_img {
+            @include mixins.width-height(45.5rem, 6rem);
+            
+            & figure {
+                @include mixins.width-height(6rem, 6rem);
+                
+                & img {
+                    @include mixins.width-height(2.75rem, 2.75rem);
+                }
+            }
+        }
 
-    .card_date-inputs .input {
-        padding: 0.75rem 1.5rem;
-        @include mixins.width-height(10rem, 4.5rem);
-    }
-
-    .card_date-inputs .info {
-        font-size: 0.875rem;
-    }
-
-    .--day .info {
-        @include mixins.width-height(2.313rem, 1.313rem);
-    }
+        button {
+            @include mixins.width-height(6rem, 6rem);
+        }
+        
+        .line:last-child {
+            display: none;
+        }
     
-    .--month .info {
-        @include mixins.width-height(4.188rem, 1.313rem);
-    }
-    
-    .--year .info {
-        @include mixins.width-height(2.938rem, 1.313rem);
-    }    
-
-    .card_img {
-        @include mixins.width-height(45.5rem, 6rem);
-    }
-
-    .line:last-child {
-        display: none;
-    }
-
-    .line:first-child {
-        width: 39.5rem;
-    }
-
-    .card_img figure, button {
-        @include mixins.width-height(6rem, 6rem);
-    }
-    
-    .card_img figure img {
-        @include mixins.width-height(2.75rem, 2.75rem);
-    }
-
-    .card_date-outputs {
-        @include mixins.width-height(45.5rem, 21.375rem);
-    }
-
-    .card_date-outputs > div {
-        @include mixins.width-height(45.5rem, 7.125rem);
-    }
-
-    .card_date-outputs .result-info, .info-output{
-        font-size: 6.5rem;
-        height: 7.125rem;
-    }
-
-    .--years {
-        width: 18.813rem;
-    }
-    
-    .--months {
-        width: 25.813rem;
-    }
-    
-    .--days {
-        width: 16.438rem;
+        .line:first-child {
+            width: 39.5rem;
+        }
+        
+        &_date-outputs {
+            @include mixins.width-height(45.5rem, 21.375rem);
+            
+            & > div {
+                @include mixins.width-height(45.5rem, 7.125rem);
+            }
+        
+            & .result-info, .info-output{
+                font-size: 6.5rem;
+                height: 7.125rem;
+            }
+        }
+        
+        .--years {
+            width: 18.813rem;
+        }
+        
+        .--months {
+            width: 25.813rem;
+        }
+        
+        .--days {
+            width: 16.438rem;
+        }
     }
 }

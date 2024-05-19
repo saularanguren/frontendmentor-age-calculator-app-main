@@ -1,4 +1,5 @@
 import { desactiveModeError } from "../error-handling/modeError"
+import { clearInputsBasedOnCardWidth } from "../utils/clearInputAndOutput"
 
 export const clearInputsText = () => {
     const message = document.querySelectorAll('span'),
@@ -7,20 +8,13 @@ export const clearInputsText = () => {
     
     arrayInputs.forEach(input => {
         input.addEventListener('click', () => {
+            // * clear input individually *
             input.value = ''
 
-            arrayContainers.forEach(container => {
-                if(container.textContent != '--') {
-                    // * cleaning of all containers and inputs *
-                    container.textContent = '--'
-                                    
-                    for(let i = 0; i < arrayInputs.length; i++) {
-                        arrayInputs[i].value = ''
-                    }
-                }
-            })
+            // * cleaning of all containers and inputs *
+            clearInputsBasedOnCardWidth(arrayContainers, arrayInputs)
 
-            //* Removed error mode
+            //* removed error mode
             desactiveModeError()
             message.forEach(mes => mes.textContent = ``)
         })
