@@ -249,6 +249,7 @@ span {
     padding: 0.75rem 1.5rem;
     width: 10rem;
     height: 4.5rem;
+    font-size: 2rem;
   }
   .card_date-inputs .info {
     font-size: 0.875rem;
